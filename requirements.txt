@@ -1,9 +1,0 @@
-pytz
-ujson
-loguru
-mariadb
-pydantic
-envparse
-SQLAlchemy
-python-telegram-bot[json]
-python-telegram-bot-pagination
