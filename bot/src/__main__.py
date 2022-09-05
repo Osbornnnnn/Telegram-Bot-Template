@@ -2,7 +2,7 @@ from telegram import ParseMode
 from telegram.ext import Updater, Defaults
 
 try:
-    from bot.src import handlers, queues, config
+    from bot.src import config, queues, handlers
     from bot.src.utils.logger import logger
 except:
     from . import handlers, queues, config

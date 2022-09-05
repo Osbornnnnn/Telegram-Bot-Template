@@ -2,10 +2,6 @@ FROM python:3.10-slim-buster AS builder
 
 RUN mkdir -p /opt/Telegram-Bot/bot/src
 
-RUN apt-get update \
-    && apt-get -yy install libmariadb-dev \
-    && apt-get -yy install gcc
-
 WORKDIR /opt/Telegram-Bot/bot
 
 COPY requirements.txt .

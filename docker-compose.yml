@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    aml-bot:
+        build:
+            context: bot
+            dockerfile: Dockerfile
+        container_name: Telegram-Bot
+        environment:
+            TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+            DATABASE_URI: ${DATABASE_URI}
+        volumes:
+            - ./bot/logs:/opt/Telegram-Bot/bot/logs

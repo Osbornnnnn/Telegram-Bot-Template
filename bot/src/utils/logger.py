@@ -6,7 +6,7 @@ from loguru import logger
 logger.remove()
 
 # Добавление лог-файла в регистратор.
-logger.add("../../logs/bot_{time:YYYY-MM-DD}.log", retention="60 days",
+logger.add("../logs/bot_{time:YYYY-MM-DD}.log", retention="60 days",
            format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {file}:{line} | {message}")
 
 # Добавление обработчика `ERROR` в логгер.

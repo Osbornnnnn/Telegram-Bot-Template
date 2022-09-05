@@ -1,9 +1,9 @@
 pytz
 ujson
 loguru
-mariadb
 pydantic
 envparse
 SQLAlchemy
+psycopg2-binary
 python-telegram-bot[json]
 python-telegram-bot-pagination

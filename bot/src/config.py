@@ -12,4 +12,4 @@ TELEGRAM_TOKEN = env.str("TELEGRAM_TOKEN", default="")
 
 # Способ получить URI базы данных из переменной среды. Если он не установлен, будет использоваться значение по умолчанию.
 # Установите свои данные
-DATABASE_URI = env.str("DATABASE_URI", default="mariadb+mariadbconnector://DB_USERNAME:DB_PASSWORD@DB_HOST/DB_NAME")
+DATABASE_URI = env.str("DATABASE_URI", default="postgres+postgres://DB_USERNAME:DB_PASSWORD@localhost/postgres")
